@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>maps</title>
+</head>
+
+<body>
+    <!--img ist ein element src/alt/usemap sind atribute-->
+    <img src="/map-images/europe-map.jpg" alt="europe map" usemap="#anymap"> <!--der hashtag vor anymap (#anymap) fungiert wie ein ID es ist einzigartig und wird immer nur einmal benutzt in diesem falle zeigt es dem nachfolgenden element "map" mit dem attribute name (<map name="anymap">) das er sich auf das bild in #anymap beziehen soll -->
+    
+    <map name="anymap"> <!-- dieses anymap bezieht sich auf das usemap= #anymap-->
+        <area shape="rect" coords="320,377,373,506" href="https://www.britannica.com/place/Germany">
+        <area alt="france map" title="france" href="https://www.france.fr/en" coords="165,432,292,591" shape="rect">
+        <area target="" alt="italy map" title="italy" href="https://www.lonelyplanet.com/italy" coords="437,739,285,538" shape="rect">
+
+        <!--map heisst dass man das bild was man einteilen möchte "mappt" man kann es also für jedes bild anlegen, bei dem man möchte dass es einzelne verlinkte gebiete anzeigt, aber man muss es genauso wie hier anlegen erst image anlegen dann map
+        dann die gebiete-->
+
+    </map>
+</body>
+</html>
